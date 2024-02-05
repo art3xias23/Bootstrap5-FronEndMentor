@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <style>
+      @font-face {
+        font-family: "Yese";
+        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Ov";
+        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+          format("truetype");
+        font-size: large;
+        font-weight: 300;
+      }
+
+      body {
+        background-color: rgb(250, 232, 208);
+        font-family: "Ov";
+      }
+
+      .title {
+        font-family: "Yese";
+      }
+      .col-custom {
+        width: 30px;
+      }
+      .custom-container {
+        width: 40%;
+      }
+
+      .prep-container {
+        background-color: #faebf5;
+      }
+
+      .prep-title {
+        color: #9d5275;
+      }
+
+      .ingredients li {
+        padding-left: 20px;
+      }
+    </style>
+
+    <title>Frontend Mentor | Recipe page</title>
+  </head>
+  <body>
+    <div class="container">
+      <main name="white-card" class="bg-white rounded-4">
+        <div name="white-card-content" class="container mx-auto text-center">
+          <!-- Hide on screens bigger than sm -->
+          <!-- show on screens smaller than sm -->
+          <div class="d-sm-none">
+            <img src="assets/images/image-omelette.jpeg" class="w-100" />
+          </div>
+          <!-- Hide on screens smaller than sm -->
+          <!-- Show on screens sm or bigger -->
+          <div class="container p-3 d-none d-sm-block">
+            <img
+              src="assets/images/image-omelette.jpeg"
+              class="img-fluid mt-4 rounded-4"
+            />
+          </div>
+
+          <div class="container">
+            <div class="display-6 title text-start mt-4 mb-4">
+              Simple Omelette Recipe
+            </div>
+            <div class="p-1 text-start ms-3">
+              <p>
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+
+            <!-- Section preparation time -->
+            <section class="prep-container rounded-2">
+              <div name="prep" class="container-fluid text-start p-2">
+                <div class="title ms-4 pt-4 prep-title">Preparation time</div>
+                <ul>
+                  <li>
+                    <span class="ps-4" style="font-weight: bold">Total:</span>
+                    Approximately 10 minutes
+                  </li>
+                  <li>
+                    <span class="ps-4" style="font-weight: bold"
+                      >Preparation:</span
+                    >
+                    5 minutes
+                  </li>
+                  <li>
+                    <span class="ps-4" style="font-weight: bold">Cooking:</span>
+                    5 minutes
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- Ingredients -->
+            <section class="py-4">
+              <div class="container text-start">
+                <h2 class="title prep-title">Ingredients</h2>
+                <ul class="text-align-left">
+                  <li class="ps-4">2-3 large eggs</li>
+                  <li class="ps-4">Salt, to taste</li>
+                  <li class="ps-4">Pepper, to taste</li>
+                  <li class="ps-4">1 tablespoon of butter or oil</li>
+                  <li class="ps-4">
+                    Optional fillings, cheese, dived vegerables, cooked meats,
+                    herbs
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Some Line -->
+            <hr class="m-1 text-secondary" />
+
+            <!-- Section Instructions -->
+
+            <section class="py-4">
+              <div class="container text-start">
+                <h2 class="title prep-title">Instructions</h2>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">1.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Beat the eggs:</span> in a bowl, beat
+                    the eggs with a pinch of salt and pepper until they are well
+                    mixed. You can add a tablespoon of water or milk for a
+                    fluffier texture.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">2.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Heat the pan:</span>Place a non-stick
+                    frying pan over medium heat and add butter or oil.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">3.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Cook the omlette:</span> Once the
+                    butter is melted and bubbling, pour in the eggs. Tilt the
+                    pan to ensure the eggs evenly coat the surface.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">4.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Add fillings(optional):</span> When
+                    the eggs begin to set at the edges but are still slightly
+                    runny in the middle, sprinkle your chosen fillings over one
+                    half of the omelette.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">5.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Fold and serve:</span> As the omelette
+                    continues to cook, carefully lift one edge and fold it over
+                    the fillings. Let it cook for another minute, then slide it
+                    onto a plate.
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-custom">
+                    <span class="prep-title fw-bold fs-5">6.</span>
+                  </div>
+                  <div class="col-11">
+                    <span class="fw-bold">Cook the omlette:</span> Serve hot,
+                    with additional salt and pepper if needed.
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section Nutrition -->
+            <hr class="m-1 text-secondary" />
+
+            <section class="py-4 text-start">
+              <div class="container">
+                <h2 class="title prep-title">Nutrition</h2>
+                <p class="mt-4">
+                  The table below shows nutritional values per serving without
+                  the additonal fillings
+                </p>
+                <div class="row">
+                  <div class="row border-bottom py-3 px-5">
+                    <div class="col-6">Calories</div>
+                    <div class="col-6 prep-title fw-bold">277kcal</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="row border-bottom py-3 px-5">
+                    <div class="col-6">Carbs</div>
+                    <div class="col-6 prep-title fw-bold">0g</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="row border-bottom py-3 px-5">
+                    <div class="col-6">Protein</div>
+                    <div class="col-6 prep-title fw-bold">20g</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="row border-bottom py-3 px-5">
+                    <div class="col-6">Fat</div>
+                    <div class="col-6 prep-title fw-bolder">22g</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Konstantin Milchev</a>.
+    </div>
+  </body>
+</html>
