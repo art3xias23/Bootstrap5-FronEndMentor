@@ -6,10 +6,37 @@ body {
 	background-color: var(--b-c);
 }
 
-
-
 #white-section{
 	border-radius: 20px;
+}
+
+h-95{
+	height:95%;
+}
+h-90{
+	height:90%;
+}
+
+.w-95{
+	width:95%;
+}
+.h-95{
+	height:85%;
+}
+.w-45{
+	width: 45%;
+}
+
+.h-45{
+	height: 45%;
+}
+
+.h-60{
+	height:60%;
+}
+
+.w-60{
+	width:60%;
 }
 
 .attribution {
