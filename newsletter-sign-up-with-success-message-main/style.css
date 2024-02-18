@@ -1,9 +1,28 @@
+@font-face{
+	font-family: 'CustomBold';
+	src: url(assets/fonts/Roboto-Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+
+}	
+
+@font-face{
+	font-family: 'CustomRegular';
+	src: url(assets/fonts/Roboto-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+
+}
 :root {
-	--b-c: #36384D;
+	--background-color: #36384D;
+
 }
 
 body {
-	background-color: var(--b-c);
+	width:1440px;
+	font-size:16px;
+	font-family:'CustomRegular';
+	background-color: var(--background-color);
 }
 
 #white-section{
@@ -38,6 +57,12 @@ h-90{
 .w-60{
 	width:60%;
 }
+
+#heading{
+	font-family: 'CustomBold';
+}
+
+ul{}
 
 .attribution {
 	font-size: 11px;
