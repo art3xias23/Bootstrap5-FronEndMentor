@@ -1,7 +1,22 @@
-:root{
-	--background-color:#36384D;
+:root {
+	--b-c: #36384D;
 }
- 
-body{
-	background-color: var(--background-color)
+
+body {
+	background-color: var(--b-c);
+}
+
+
+
+#white-section{
+	border-radius: 20px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
