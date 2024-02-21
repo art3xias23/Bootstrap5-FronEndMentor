@@ -28,18 +28,45 @@ body {
 	border-radius: 20px;
 }
 
-h-95{
+.h-95{
 	height:95%;
-}
-h-90{
-	height:90%;
 }
 
 .w-95{
 	width:95%;
 }
-.h-95{
+w-90{
+	width:90%;
+}
+.h-85{
 	height:85%;
+}
+.w-85{
+	width:85%;
+}
+.h-80{
+	height:80%;
+}
+.w-80{
+	width:80%;
+}
+.h-65{ height:65%;
+}
+
+.w-65{
+	width:65%;
+}
+.h-60{ height:60%;
+}
+
+.w-60{
+	width:60%;
+}
+.h-55{
+	height:55%;
+}
+.w-55{
+	width:55%;
 }
 .w-45{
 	width: 45%;
@@ -47,6 +74,27 @@ h-90{
 
 .h-45{
 	height: 45%;
+}
+.w-40{
+	width: 40%;
+}
+
+.h-40{
+	height: 40%;
+}
+.w-35{
+	width: 35%;
+}
+
+.h-35{
+	height: 35%;
+}
+.w-30{
+	width: 30%;
+}
+
+.h-30{
+	height: 30%;
 }
 
 .h-60{
@@ -72,4 +120,8 @@ background-color: #FF634E;
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.success-box{
+	border-radius: 20px;
 }
