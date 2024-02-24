@@ -14,25 +14,26 @@
 
 </head>
 
-<body>
-	<div class="d-flex justify-content-center align-items-center vh-100">
-		<div class="bg-white w-30 h-30 success-box d-flex justify-content-center align-items-center">
-			<div class="w-75 h-75">
-				<div class="row mb-2">
-					<div class="col-1">
+<body class="h-100">
+	<div class="d-flex justify-content-center align-items-center h-100">
+		<div class="h-40 bg-white success-box d-flex justify-content-center align-items-center" style="width:450px" >
+			<div class="w-80 d-flex flex-column" >
+				<div class=" w-100" >
+					<div class="col-1 mb-4">
 						<img src="assets/images/icon-success.svg" style="height:80%" />
 					</div>
 				</div>
-				<div class="row mb-5">
+				<div class="row  w-100" >
 					<h1 class="fs-1" style="font-family:customBold">Thanks for subscribing!</h1>
 				</div>
-				<div class="row mb-3">
-					A confirmation email has been sent to <span style="display:inline;font-weight:bold;"
-						 id="emailPlaceholder"></span>.
+				<div class="row ms-1 w-100 mb-3 txt overflow-hidden">
+					A confirmation email has been sent to 
+					<span class="ps-1" style="font-weight:bold; width:0%" id="emailPlaceholder"></span> 
+					Please open it and click the button inside to confirm your subscription.
 
 				</div>
-				<div class="row d-flex justify-content-center" style="height:50px;">
-					<button class="btn btn-dark text-light w-65 h-100" />
+				<div class="ms-1 row d-flex justify-content-center w-100" >
+					<button class="btn btn-dark text-white ">Dismiss message</button>
 				</div>
 			</div>
 		</div>
