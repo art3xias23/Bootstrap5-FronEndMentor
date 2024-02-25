@@ -1,3 +1,29 @@
+@font-face{
+	src: url("assets/fonts/Poppins-Bold.ttf");
+	font-family: "custom-bold";
+}
+@font-face{
+	src: url("assets/fonts/Poppins-BoldItalic.ttf");
+	font-family: "custom-bolditalic";
+}
+@font-face{
+	src: url("assets/fonts/Poppins-ExtraBold.ttf");
+	font-family: "custom-extrabold";
+}
+@font-face{
+	src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+	font-family: "custom-extrabolditalic";
+}
+@font-face{
+	src: url("assets/fonts/Poppins-Italic.ttf");
+	font-family: "custom-italics";
+}
+@font-face{
+	src: url("assets/fonts/Poppins-Regular.ttf");
+	font-family: "custom-regular";
+}
+
+
 .h-95 {
 	height: 95%;
 }

@@ -29,73 +29,69 @@
 </head>
 
 <body class="h-100">
-		<div id="gray-background" class="d-flex align-items-center justify-content-center bg-light h-100">
-			<div id="white-background" class="bg-white w-70 h-80">
-				<div class="row m-5 px-5" style="height:15%" >
-					<div class="col-3 d-flex flex-column">
-						<div class="row date-label" > 
-							<label>DAY</label>
-						</div>
-						<div class="row date-input">
-							<input>
-						</div>
+	<div id="gray-background" class="d-flex align-items-center justify-content-center bg-light h-100">
+		<div id="white-background" class="bg-white w-70 h-80">
+			<div class="row m-5 px-5" style="height:15%">
+				<div class="col-3 d-flex flex-column">
+					<div class="row date-label">
+						<label>DAY</label>
 					</div>
-					<div class=" col-3 d-flex flex-column">
-						<div class="row date-label" > 
-							<label>MONTH</label>
-						</div>
-						<div class="row date-input">
-							<input>
-						</div>
-					</div>
-					<div class="col-3 d-flex flex-column">
-						<div class="row date-label" > 
-							<label>YEAR</label>
-						</div>
-						<div class="row date-input bg-primary">
-							<input>
-						</div>
+					<div class="row date-input">
+						<input id="getyears">
 					</div>
 				</div>
-				<div class="row m-5 px-5" style="height:5%">
-					<div class="col-10 mt-4">
-						<hr>
+				<div class=" col-3 d-flex flex-column">
+					<div class="row date-label">
+						<label>MONTH</label>
 					</div>
-					<div class="col-2">
-						<button class="bg-secondary" style="width:60%; height:140%; border-radius:100%;">
-							<img src="assets/images/icon-arrow.svg"/>
-						</button>
+					<div class="row date-input">
+						<input id="getmonths">
 					</div>
 				</div>
-				<div class="row" style="height:26%">
-
+				<div class="col-3 d-flex flex-column">
+					<div class="row date-label">
+						<label>YEAR</label>
+					</div>
+					<div class="row date-input bg-primary">
+						<input id="getdays">
+					</div>
 				</div>
-				<div class="row" style="height:26%">
-
+			</div>
+			<div class="row m-5 px-5" style="height:5%">
+				<div class="col-10 mt-4">
+					<hr>
 				</div>
-				<div class="row" style="height:26%">
-
+				<div class="col-2">
+					<button class="bg-secondary"
+						style="width:60%; height:140%; border-radius:100%;"
+						onclick="setNumbers()">
+						<img src="assets/images/icon-arrow.svg" />
+					</button>
 				</div>
-
-				Day
-				DD
-
-				Month
-				MM
-
-				Year
-				YYYY
-
-				-- years
-				-- months
-				-- days
+			</div>
+			<div class="row ms-5 px-5" style="font-size:150px;font-family:custom-extrabolditalic">
+				<label><span id="setyears" style="color:#864DFE; font-family:custom-bolditalic">36</span> years</label>
+			</div>
+			<div class="row mx-5 ps-5" style="font-size:150px;font-family:custom-extrabolditalic">
+				<label><span id="setmonths" style="color:#864DFE; font-family:custom-bolditalic"">3</span> months</label>
+			</div>
+			<div class="row mx-5 ps-5" style="font-size:150px;font-family:custom-extrabolditalic;">
+				<label><span id="setdays" style="color:#864DFE; font-family:custom-bolditalic;">22</span> days</label>
+			</div>
+			<div class="row mx-5 ps-5" style=" font-size:150px;font-family:custom-italics;">
 			</div>
 		</div>
+	</div>
 
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="#">Konstantin Milchev</a>.
 	</div>
+	<script>
+		setNumbers(){
+			
+		}
+	</script>
 </body>
 
 </html>
