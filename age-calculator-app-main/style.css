@@ -32,7 +32,7 @@
 	width: 95%;
 }
 
-w-90 {
+.w-90 {
 	width: 90%;
 }
 
@@ -142,7 +142,6 @@ w-90 {
 
 
 body {
-	background-color: red;
 	font-size: 32px;
 }
 

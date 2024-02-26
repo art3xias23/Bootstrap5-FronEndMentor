@@ -23,7 +23,6 @@
 		}
 
 		.attribution a {
-			color: hsl(228, 45%, 44%);
 		}
 	</style>
 </head>
@@ -37,7 +36,7 @@
 						<label>DAY</label>
 					</div>
 					<div class="row date-input">
-						<input id="getdays">
+						<input maxlength="2" id="getdays">
 					</div>
 				</div>
 				<div class=" col-3 d-flex flex-column">
@@ -45,7 +44,7 @@
 						<label>MONTH</label>
 					</div>
 					<div class="row date-input">
-						<input id="getmonths">
+						<input maxlength="2" id="getmonths">
 					</div>
 				</div>
 				<div class="col-3 d-flex flex-column">
@@ -53,7 +52,7 @@
 						<label>YEAR</label>
 					</div>
 					<div class="row date-input bg-primary">
-						<input id="getyears">
+						<input maxlength="4" id="getyears">
 					</div>
 				</div>
 			</div>
@@ -61,9 +60,9 @@
 				<div class="col-10 mt-4">
 					<hr>
 				</div>
-				<div class="col-2">
-					<button class="bg-secondary"
-						style="width:60%; height:140%; border-radius:100%;"
+				<div class="col-sm-12 col-md-2 col-lg-1">
+					<button class="" 
+						style="width:60%; height:140%; border-radius:100%;background-color:#864DFE;"
 						onclick="setNumbers()">
 						<img src="assets/images/icon-arrow.svg" />
 					</button>
