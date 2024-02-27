@@ -206,8 +206,7 @@ textarea {
   font-variation-settings: inherit;
   /* 1 */
   font-size: 100%;
-  /* 1 */
-  font-weight: inherit;
+  /* 1 */ font-weight: inherit;
   /* 1 */
   line-height: inherit;
   /* 1 */
