@@ -16,6 +16,18 @@ module.exports = {
 			xl: '1440px',
 		},
 		extend: {
+			colors:{
+				'custom-left-blue':'#4E38F5',
+				'custom-left-bold-blue':'#462BDA',
+				'custom-red':'#fff6f5',
+				'custom-bold-red':'#FA979A',
+				'custom-yellow':'#F5F9FA',
+				'custom-bold-yellow':'#E4C167',
+				'custom-green':'#F2FBFA',
+				'custom-bold-green':'#32A588',
+				'custom-blue':'#F3F3FD',
+				'custom-bold-blue':'#555C96',
+			}
 		},
 	},
 	plugins: [],
