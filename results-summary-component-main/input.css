@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+	font-family:'med';
+	src: url('assets/fonts/static/med.woff') format('woff')
+}
+@font-face{
+
+	font-family:'bold';
+	src: url('assets/fonts/static/bold.woff') format('woff')
+}
+@font-face{
+
+	font-family:'ebold';
+	src: url('/assets/fonts/static/ebold.woff') format('woff')
+}
+@font-face{
+
+	font-family:'new';
+	src: url('/assets/fonts/static/new.woff') format('woff')
+}
