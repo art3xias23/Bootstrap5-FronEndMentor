@@ -21,7 +21,7 @@ module.exports = {
 				'custom-left-bold-blue':'#462BDA',
 				'custom-red':'#fff6f5',
 				'custom-bold-red':'#FA979A',
-				'custom-yellow':'#F5F9FA',
+				'custom-yellow':'#FFFBF2',
 				'custom-bold-yellow':'#E4C167',
 				'custom-green':'#F2FBFA',
 				'custom-bold-green':'#32A588',
