@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const openmenu = document.getElementById('openmenu')
 	const closemenu = document.getElementById('closemenu')
 	const main = document.getElementById('main')
-	const body = document.getElementById('body')
+	const body = document.body
 	const side = document.getElementById('sidebar')
 
 	openmenu.addEventListener('click', function() {
