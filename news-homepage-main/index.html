@@ -25,7 +25,7 @@
 
 <body id='body' class="">
 	<div id="main" class=" my-20 md:mx-32 mx-8">
-		<div>
+		<div class="space-y-8 sm:space-y-2">
 			<nav class="flex justify-between">
 				<div class="max-w-screen-xl">
 					<a href='/'>
@@ -45,8 +45,8 @@
 					<img src="assets/images/icon-menu.svg" alt="hamburgermenu" />
 				</div>
 			</nav>
-			<div id="content" class="flex flex-col my-8">
-				<div id="col1" class="sm:flex sm:flex-row space-x-4">
+			<div id="content" class="flex flex-col space-y-16 sm:my-8">
+				<div id="col1" class="space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-4">
 					<div id="row1 sm:flex sm:flex-row space-x-4 mt-4">
 						<div id="top-image" class="sm:flex sm:flex-col">
 							<img src="assets/images/image-web-3-mobile.jpg"
@@ -54,11 +54,11 @@
 							<img src="assets/images/image-web-3-desktop.jpg"
 								class="hidden sm:block"></img>
 						</div>
-						<div id="col4" class="sm:flex sm:flex-row mt-4 space-x-8">
+						<div id="col4" class="space-y-8 sm:space-y-0 sm:flex sm:flex-row mt-4 sm:space-x-24">
 							<div id="bright-future" class="sm:w-2/5 text-6xl font-extrabold ">
 								The Bright Future of Web 3.0?
 							</div>
-							<div id="text-button" class="sm:w-3/5 sm:flex sm:flex-col">
+							<div id="text-button" class="space-y-8 sm:w-3/5 sm:flex sm:flex-col">
 								<div id="title-text" class="text-slate-400 text-lg flex-grow">
 									We dive into the next evolution of the web that
 									claims
@@ -71,7 +71,7 @@
 									hands of the people.
 									But is it really fulfilling its promise?
 								</div>
-								<div id="readmore-btn" class="h-12 w-1/2">
+								<div id="readmore-btn" class="sm:h-12 w-1/2">
 									<div class="sm:flex sm:items-center sm:justify-center h-full w-full bg-orange-600 p-4 hover:bg-black">
 										<button
 											class="text-white tracking-[.5em] h-full ">READ
@@ -127,21 +127,21 @@
 						</div>
 					</div>
 				</div>
-				<div id="col2" class="sm:mt-24">
-					<div id="3-image-section" class="flex flex-col space-y-4 sm:flex-row sm:space-x-36">
+				<div id="col2" class="mt-24">
+					<div id="3-image-section" class="flex flex-col space-y-8 sm:space-y-0  sm:flex-row sm sm:space-x-36">
 						<div class="flex space-x-2">
 							<div class="w-200px">
 								<img class="object-fill"
 									src="assets/images/image-retro-pcs.jpg" />
 							</div>
-							<div class="flex flex-col">
-								<div class="text-2xl text-slate-400">
+							<div class="flex flex-col justify-between">
+								<div class="text-4xl text-slate-400">
 									01
 								</div>
-								<div class="text-black font-bold">
+								<div class="text-black font-bold text-lg">
 									Reviving Retro PCs
 								</div>
-								<div class="text-slate-200">
+								<div class="text-slate-200 text-lg">
 									What happens when old PCs are given modern
 									upgrades?
 								</div>
@@ -152,14 +152,14 @@
 								<img class="object-contain"
 									src="assets/images/image-top-laptops.jpg" />
 							</div>
-							<div class="flex flex-col">
-								<div class="text-2xl text-slate-400">
+							<div class="flex flex-col justify-between">
+								<div class="text-4xl text-slate-400">
 									02
 								</div>
-								<div class="text-black font-bold">
+								<div class="text-black font-bold text-lg">
 									Top 10 Laptops of 2022
 								</div>
-								<div class="text-slate-300">
+								<div class="text-slate-300 text-lg">
 									Our best picks for various needs and budgets.
 								</div>
 							</div>
@@ -169,14 +169,14 @@
 								<img class="object-cover"
 									src="assets/images/image-gaming-growth.jpg" />
 							</div>
-							<div class="flex flex-col">
-								<div class="text-2xl text-slate-400">
+							<div class="flex flex-col justify-between">
+								<div class="text-4xl text-slate-400">
 									03
 								</div>
-								<div class="text-black font-bold">
+								<div class="text-black font-bold text-lg">
 									The Growth of Gaming
 								</div>
-								<div class="text-slate-300">
+								<div class="text-slate-300 text-lg">
 									How the pandemic has sparked fresh
 									opportunities.
 								</div>
@@ -186,12 +186,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="attribution">
+	</div>
+		<div class="attribution fixed bottom-0 mx-auto w-full">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
 				Mentor</a>.
 			Coded by <a href="#">Konstantin Milchev</a>.
 		</div>
-	</div>
 </body>
 <div id="sidebar"
 	class="fixed top-0 right-0 w-3/4 h-full z-50 transform bg-white transition-transform duration-300 ease-in-out translate-x-full">
