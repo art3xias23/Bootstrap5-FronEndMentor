@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+	content: ["./*.{html, js}"],
+	  safelist: [  
+    'bg-indigo-800',
+		  'bg-violet-200'  ],
 	  theme: {
 		screens: {
 			sm: '480px',

@@ -1,23 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+function onChangedCb() {
 	var checkboxes = document.querySelectorAll('.checkbox');
 
 	checkboxes.forEach(function(element){
-		element.addEventListener('change', function(event) {
-		var parentDiv = event.target.closest('.cnt');
+		var parentDiv = element.closest('.cnt');
 
 		console.log(parentDiv)
 
-		if (event.target.checked) {
-			parentDiv.classList.remove('border-sky-500');
-			parentDiv.classList.add('border-indigo-200');
+		if (element.checked) {
+			parentDiv.classList.remove('border-gray-100');
+			parentDiv.classList.add('border-indigo-800');
 			parentDiv.classList.add('bg-violet-200')
 		}
 		else {
 
-			parentDiv.classList.add('border-sky-500');
-			parentDiv.classList.remove('border-indigo-200');
+			parentDiv.classList.add('border-gray-100');
+			parentDiv.classList.remove('border-indigo-800');
 			parentDiv.classList.remove('bg-violet-200')
 		}
-		})
 	})
-})
+}
