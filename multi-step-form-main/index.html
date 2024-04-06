@@ -20,11 +20,69 @@
 		.attribution a {
 			color: hsl(228, 45%, 44%);
 		}
+
+		.checkbox {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+		}
 	</style>
 </head>
-<body class="m-5">
-	<main class="bg-gray-200 h-full min-h-screen">
-		Hi
+
+<body>
+	<main class="relative bg-gray-200 h-screen w-screen overflow-hidden">
+		<div class="w-full h-1/4 z-1 overflow-hidden">
+			<img src="assets/images/bg-sidebar-mobile.svg" class="w-full " />
+		</div>
+		<div class="absolute z-99 bg-white rounded-lg top-20 left-5 right-5 bottom-25">
+			<div class="flex flex-col">
+				<div class="p-5 space-y-4">
+					<h1 class="text-xl font-bold">Pick add-ons</h1>
+					<h1 class="text-slate-400">Add-ons help enhance your gaming experience.</h1>
+					<div id="box-1" class="border-solid border-2 border-sky-500 h-20 rounded-lg">
+						<div class="flex flex-row px-5 py-3 h-full">
+							<div class="w-1/5 h-full flex items-center">
+								<input type="checkbox" class="checkbox">
+							</div>
+							<div class="w-3/5 h-full">
+								<div class="h-full flex flex-col justify-center">
+									<p class="font-bold">Online Service</p>
+									<span class="text-xs text-slate-400">Access to
+										myltiplayer games</p>
+								</div>
+							</div>
+							<div class="w-1/5 flex items-center h-full">
+								<span class="text-sm text-indigo-500">+$2/mo</span>
+							</div>
+						</div>
+					</div>
+					<div id="box-2" class="border-solid border-2 border-sky-500 h-20 rounded-lg">
+						<div class="flex flex-row px-5 py-3 h-full">
+							<div class="w-1/5 h-full flex items-center">
+								<input type="checkbox" class="checkbox">
+							</div>
+							<div class="w-3/5 h-full">
+								<div class="h-full flex flex-col justify-center">
+									<p class="font-bold">Lar</p>
+									<span class="text-xs text-slate-400">Access to
+										myltiplayer games</p>
+								</div>
+							</div>
+							<div class="w-1/5 flex items-center h-full">
+								<span class="text-sm text-indigo-500">+$2/mo</span>
+							</div>
+						</div>
+					</div>
+					<div id="box-3" class="border-solid border-2 border-sky-500 h-20 rounded-lg">
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 </body>
+
 </html>
