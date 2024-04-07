@@ -1,7 +1,8 @@
+document.getElementById('circle2').addEventListener('click', getContent)
 function onChangedCb() {
 	var checkboxes = document.querySelectorAll('.checkbox');
 
-	checkboxes.forEach(function(element){
+	checkboxes.forEach(function(element) {
 		var parentDiv = element.closest('.cnt');
 
 		console.log(parentDiv)
@@ -19,3 +20,22 @@ function onChangedCb() {
 		}
 	})
 }
+
+function getContent() {
+	fetch('plan.html')
+		.then(response => {
+			if (!response.ok) {
+				console.log('oops')
+				throw new Error('Could not get file plan.html')
+			}
+			return response.text();
+		})
+		.then(data => {
+			document.getElementsByTagName("main").innerHtml = data
+		})
+		.catch(error => {
+			console.error('Some other error: ', error);
+		})
+
+}
+
