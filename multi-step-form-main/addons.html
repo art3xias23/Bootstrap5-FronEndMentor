@@ -1,0 +1,74 @@
+<main class="relative bg-gray-200 h-screen w-screen overflow-hidden">
+	<div class="w-full h-1/4 z-1 overflow-hidden relative">
+		<img src="assets/images/bg-sidebar-mobile.svg" class="w-full" />
+		<div class="absolute top-5 bottom-24 w-full flex justify-center items-center h-10 gap-4">
+			<div class="circle bg-cyan-100 text-slate-950">1</div>
+			<div class="circle">2</div>
+			<div class="circle">3</div>
+			<div class="circle">4</div>
+		</div>
+	</div>
+	<div class="panel absolute z-99 bg-white rounded-lg top-20 left-5 right-5 bottom-25">
+		<div class="flex flex-col">
+			<div class="p-5 space-y-4">
+				<h1 class="text-xl font-bold">Pick add-ons</h1>
+				<h1 class="text-slate-400">Add-ons help enhance your gaming experience.</h1>
+				<div id="box-1" class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+					<div class="flex flex-row px-5 py-3 h-full">
+						<div class="w-1/6 h-full flex items-center">
+							<input type="checkbox" class="checkbox"
+								onchange="onChangedCb()">
+						</div>
+						<div class="w-3/5 h-full">
+							<div class="h-full flex flex-col justify-center">
+								<p class="font-bold">Online Service</p>
+								<span class="text-xs text-slate-400">Access to
+									myltiplayer games</p>
+							</div>
+						</div>
+						<div class="w-1/5 flex items-center h-full">
+							<span class="text-sm text-indigo-500">+$1/mo</span>
+						</div>
+					</div>
+				</div>
+				<div id="box-2" class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+					<div class="flex flex-row px-5 py-3 h-full">
+						<div class="w-1/6 h-full flex items-center">
+							<input type="checkbox" class="checkbox"
+								onchange="onChangedCb()">
+						</div>
+						<div class="w-3/5 h-full">
+							<div class="h-full flex flex-col justify-center">
+								<p class="font-bold">Larger Storage</p>
+								<span class="text-xs text-slate-400">Extra 1TB of cloud
+									save</p>
+							</div>
+						</div>
+						<div class="w-1/5 flex items-center h-full">
+							<span class="text-sm text-indigo-500">+$2/mo</span>
+						</div>
+					</div>
+				</div>
+				<div id="box-3" class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+					<div class="flex flex-row px-5 py-3 h-full">
+						<div class="w-1/6 h-full flex items-center">
+							<input type="checkbox" class="checkbox"
+								onchange="onChangedCb()">
+						</div>
+						<div class="w-3/5 h-full">
+							<div class="h-full flex flex-col justify-center">
+								<p class="font-bold">Customizable profile</p>
+								<span class="text-xs text-slate-400">Custom theme on
+									your
+									profile</p>
+							</div>
+						</div>
+						<div class="w-1/5 flex items-center h-full">
+							<span class="text-sm text-indigo-500">+$2/mo</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
