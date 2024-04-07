@@ -42,4 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (circle2) {
 		circle2.addEventListener('click', () => getContent("plan.html"))
 	}
+
+	var circle1 = document.getElementById('circle1')
+	
+	if (circle1) {
+		circle1.addEventListener('click', () => getContent("personalinfo.html"))
+	}
 })
