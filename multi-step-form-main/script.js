@@ -37,15 +37,29 @@ function getContent(content) {
 		})
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function attachCircleListeners() {
 	var circle2 = document.getElementById('circle2')
 	if (circle2) {
 		circle2.addEventListener('click', () => getContent("plan.html"))
 	}
 
 	var circle1 = document.getElementById('circle1')
-	
+
 	if (circle1) {
 		circle1.addEventListener('click', () => getContent("personalinfo.html"))
 	}
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('click', function(event){
+		if(event.target.id=='circle1'){
+			getContent('personalinfo.html')
+		}
+		else if(event.target.id=='circle2'){
+			getContent('plan.html')
+		}
+		else if(event.target.id=='circle3'){
+			getContent('addons.html')
+		}
+	})
 })
