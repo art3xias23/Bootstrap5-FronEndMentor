@@ -44,16 +44,15 @@
 			align-items: center;
 			border-color: white;
 			border-width: 1px;
-			color: white;
 			cursor: pointer;
 
 		}
 
-		.inputs{
-			width:auto;
-			height:30px;
-			border:1px solid;
-			border-color:LightGray;
+		.inputs {
+			width: auto;
+			height: 30px;
+			border: 1px solid;
+			border-color: LightGray;
 		}
 	</style>
 </head>
@@ -63,29 +62,58 @@
 		<div class="w-full h-1/4 z-1 overflow-hidden relative">
 			<img src="assets/images/bg-sidebar-mobile.svg" class="w-full" />
 			<div class="absolute top-5 bottom-24 w-full flex justify-center items-center h-10 gap-4">
-				<div class="circle bg-cyan-100 text-slate-950">1</div>
-				<div class="circle">2</div>
-				<div class="circle">3</div>
-				<div class="circle">4</div>
+				<div class="circle text-white">1</div>
+				<div class="circle bg-cyan-100">2</div>
+				<div class="circle text-white">3</div>
+				<div class="circle text-white">4</div>
 			</div>
 		</div>
 		<div class="panel absolute z-99 bg-white rounded-lg top-20 left-5 right-5 bottom-25">
 			<div class="flex flex-col">
 				<div class="p-5 space-y-4">
-					<h1 class="text-xl font-bold">Personal Info</h1>
-					<h1 class="text-slate-400">Please provide your name, email, address, and phone
-						number.</h1>
-					<div class="flex flex-col space-y-1">
-						<label class="text-xs font-semibold" for="name">Name</label>
-						<input class="inputs" type="text" id="name" name="name" placeholder="    e.g. Stephen King"></input>
+					<h1 class="text-xl font-bold">Select your plan</h1>
+					<h1 class="text-slate-400">You have the option of montly or yearly billing.</h1>
+					<div id="box-1"
+						class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+						<div class="flex flex-row px-5 py-3 h-full space-x-4">
+							<div class="w-1/5 h-full flex justify-center">
+								<img src="assets/images/icon-arcade.svg" class="">
+							</div>
+							<div class="w-4/5 h-full w-full">
+								<div class="h-full flex flex-col justify-center">
+									<p class="font-bold">Arcade</p>
+									<span class="text-xs text-slate-400">$9/mo</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="flex flex-col space-y-1">
-						<label class="text-xs font-semibold" for="email">Email Address</label>
-						<input class="inputs" type="text" id="email" email="email" placeholder="    e.g. stephenking@lorem.com"></input>
+					<div id="box-2"
+						class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+						<div class="flex flex-row px-5 py-3 h-full space-x-4">
+							<div class="w-1/5 h-full flex justify-center">
+								<img src="assets/images/icon-advanced.svg" class="">
+							</div>
+							<div class="w-4/5 h-full w-full">
+								<div class="h-full flex flex-col justify-center">
+									<p class="font-bold">Advanced</p>
+									<span class="text-xs text-slate-400">$12/mo</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="flex flex-col space-y-1">
-						<label class="text-xs font-semibold" for="number">Phone Number</label>
-						<input class="inputs" type="text" id="number" number="number" placeholder="    e.g. +1 234 567 890"></input>
+					<div id="box-3"
+						class="cnt border-solid border-2 border-gray-100 h-20 rounded-lg">
+						<div class="flex flex-row px-5 py-3 h-full space-x-4">
+							<div class="w-1/5 h-full flex justify-center">
+								<img src="assets/images/icon-pro.svg" class="">
+							</div>
+							<div class="w-4/5 h-full w-full">
+								<div class="h-full flex flex-col justify-center">
+									<p class="font-bold">Pro</p>
+									<span class="text-xs text-slate-400">$15/mo</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
