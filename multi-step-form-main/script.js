@@ -1,4 +1,3 @@
-document.getElementById('circle2').addEventListener('click', getContent)
 function onChangedCb() {
 	var checkboxes = document.querySelectorAll('.checkbox');
 
@@ -21,21 +20,26 @@ function onChangedCb() {
 	})
 }
 
-function getContent() {
-	fetch('plan.html')
+function getContent(content) {
+	fetch(content)
 		.then(response => {
 			if (!response.ok) {
 				console.log('oops')
-				throw new Error('Could not get file plan.html')
+				throw new Error('Could not get file', content)
 			}
 			return response.text();
 		})
 		.then(data => {
-			document.getElementsByTagName("main").innerHtml = data
+			document.querySelector("main").outerHTML = data
 		})
 		.catch(error => {
 			console.error('Some other error: ', error);
 		})
-
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+	var circle2 = document.getElementById('circle2')
+	if (circle2) {
+		circle2.addEventListener('click', () => getContent("plan.html"))
+	}
+})
